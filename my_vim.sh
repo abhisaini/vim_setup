@@ -8,9 +8,11 @@ cd colors
 for x in ~/onedark.vim/colors/*;do
   cp -r $x .
 done
+cd ..
 if [[ $(ls -d */ | grep "autoload") == " " ]];then
-  mkdir "autoload"
+  mkdir autoload
 fi
+cd autoload
 for x in ~/onedark.vim/autoload/*;do
   cp -r $x .
 done
